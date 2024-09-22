@@ -98,16 +98,16 @@ def analyze():
     crew = create_tasks(raw_text)
     inputs = {"input": raw_text}
     print(raw_text)
-    #results = crew.kickoff(inputs=inputs)
+    results = crew.kickoff(inputs=inputs)
 
     # Assume results contain analysis and relevant data
-    #analysis = results['analysis']
-    #recommendations = results['recommendations']
-    #articles = results['articles']
+    analysis = results['analysis']
+    recommendations = results['recommendations']
+    articles = results['articles']
 
-    analysis = "dummy text"
-    recommendations = "dummy text"
-    articles = "dummy text"
+    #analysis = "dummy text"
+    #recommendations = "dummy text"
+    #articles = "dummy text"
     
     # Send email with the results
     send_email(user_email, analysis, recommendations, articles)
