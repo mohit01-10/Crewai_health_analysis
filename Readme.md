@@ -2,10 +2,10 @@
 This project implements a Health Analysis API using Crew AI agents, integrated with Flask for the backend. The API allows users to upload a PDF containing a blood test report, which is analyzed by various agents to provide insights and health recommendations. The system sends these insights along with relevant health articles to the user's email.
 
 # Features:
-User Authentication: Authenticate users with JWT tokens.
-PDF Blood Test Analysis: Extracts data from uploaded PDF files and uses AI to analyze the report.
-Health Article Search: Agents search the web for relevant health articles based on the analysis.
-Email Notifications: Sends the analysis, health recommendations, and article links to the user via email. 
+- User Authentication: Authenticate users with JWT tokens.
+- PDF Blood Test Analysis: Extracts data from uploaded PDF files and uses AI to analyze the report.
+- Health Article Search: Agents search the web for relevant health articles based on the analysis.
+- Email Notifications: Sends the analysis, health recommendations, and article links to the user via email. 
 
 # Approach and Methodology
 Crew AI Framework: This API uses Crew AI agents, each specialized in a task:
@@ -43,21 +43,24 @@ Project Structure
 # Setup Instructions
 1. Clone the Repository
 
-git clone https://github.com/yourusername/crewai_health_analysis.git
-cd crewai_health_analysis
+   git clone https://github.com/yourusername/crewai_health_analysis.git
+   cd crewai_health_analysis
 
 2. Set Up a Virtual Environment (optional but recommended)
 
-python3 -m venv venv
-source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate     # Windows
+   python3 -m venv venv
 
-3. Install Dependencies
-Install the required packages using pip:
-pip install -r requirements.txt
+   source venv/bin/activate  # Mac/Linux
+
+   venv\Scripts\activate     # Windows
+
+3. Install Dependencies and the required packages using pip:
+   
+   pip install -r requirements.txt
 
 5. Configure Environment Variables
-Create a .env file in the root directory to store your API keys, email credentials, and other sensitive data:
+   
+   Create a .env file in the root directory to store your API keys, email credentials, and other sensitive data:
 
 
 - GOOGLE_API_KEY=your_google_api_key
@@ -68,11 +71,11 @@ Create a .env file in the root directory to store your API keys, email credentia
 - MJ_APIKEY_PUBLIC = Mailjet public key
 - OPEN_API_KEY
 
-5. Run the Application
-Ensure you are in the project root directory, then run:
+5. Run the Application : Ensure you are in the project root directory, then run:
 
-python app.py
-This will start the Flask server on http://localhost:5000.
+   python app.py
+
+   This will start the Flask server on http://localhost:5000.
 
 # How to Use the API (Postman Guide)
 1. Login and Authentication (/login)
