@@ -22,13 +22,13 @@ Integration with Flask: Flask acts as the backend web framework to expose API en
 
 NLP Tools: The project uses NLP-based models (e.g., Ollama model) to enhance understanding and processing of health-related data from PDFs.
 
-External Tools:
+## External Tools:
 
 Web Search Tool: An agent-based tool to fetch relevant health articles using Google Custom Search API.
 Email Utility: Sends the results to users via email.
+
 Project Structure
-bash
-Copy code
+
 ├── agents/                 # Folder containing agent setup for various tasks
 │   ├── __init__.py
 │   ├── agents.py           # Define agents and tasks
