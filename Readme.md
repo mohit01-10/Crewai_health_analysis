@@ -57,13 +57,13 @@ pip install -r requirements.txt
 Create a .env file in the root directory to store your API keys, email credentials, and other sensitive data:
 
 
-GOOGLE_API_KEY=your_google_api_key
-SEARCH_ENGINE_ID=your_custom_search_engine_id
-EMAIL_FROM=email_host
-GOOGLE_API_KEY
-MJ_APIKEY_PRIVATE
-MJ_APIKEY_PUBLIC
-OPEN_API_KEY
+- GOOGLE_API_KEY=your_google_api_key
+- SEARCH_ENGINE_ID=your_custom_search_engine_id
+- EMAIL_FROM=email_host
+- GOOGLE_API_KEY
+- MJ_APIKEY_PRIVATE = Mailjet secret key
+- MJ_APIKEY_PUBLIC = Mailjet public key
+- OPEN_API_KEY
 
 5. Run the Application
 Ensure you are in the project root directory, then run:
