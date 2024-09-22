@@ -5,14 +5,17 @@ This project implements a Health Analysis API using Crew AI agents, integrated w
 User Authentication: Authenticate users with JWT tokens.
 PDF Blood Test Analysis: Extracts data from uploaded PDF files and uses AI to analyze the report.
 Health Article Search: Agents search the web for relevant health articles based on the analysis.
-Email Notifications: Sends the analysis, health recommendations, and article links to the user via email.
+Email Notifications: Sends the analysis, health recommendations, and article links to the user via email. 
 
 # Approach and Methodology
 Crew AI Framework: This API uses Crew AI agents, each specialized in a task:
 
 Blood Test Analyst Agent: Analyzes the blood test data.
+
 Article Researcher Agent: Searches the web for health articles based on the results.
+
 Health Advisor Agent: Provides health recommendations based on the research.
+
 Tasks Delegation: The tasks are handled by different agents using a Task-Oriented methodology, with each agent focusing on a specific responsibility. Tasks are defined in the agents folder for better code modularity.
 
 Integration with Flask: Flask acts as the backend web framework to expose API endpoints that allow users to authenticate, upload PDFs, and receive email notifications.
@@ -122,6 +125,11 @@ Each agent performs its task using AI models and NLP tools to interpret the data
 
 Troubleshooting
 Server Not Starting: Ensure all dependencies are installed correctly (pip install -r requirements.txt).
+
 Module Import Errors: Double-check the Python environment, especially if using a virtual environment, and ensure you have activated it.
+
 PDF File Not Uploading: Make sure to send the request as form-data in Postman with pdf as a key.
+
 API Keys Not Working: Verify that the Google API key and custom search engine ID are correct and set in the .env file.
+
+Mail Not recieved: Check Spam folder
