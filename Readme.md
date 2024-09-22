@@ -44,9 +44,10 @@ Project Structure
 1. Clone the Repository
 
    git clone https://github.com/yourusername/crewai_health_analysis.git
+   
    cd crewai_health_analysis
 
-2. Set Up a Virtual Environment (optional but recommended)
+3. Set Up a Virtual Environment (optional but recommended)
 
    python3 -m venv venv
 
@@ -54,7 +55,7 @@ Project Structure
 
    venv\Scripts\activate     # Windows
 
-3. Install Dependencies and the required packages using pip:
+4. Install Dependencies and the required packages using pip:
    
    pip install -r requirements.txt
 
