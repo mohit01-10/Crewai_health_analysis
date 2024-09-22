@@ -1,0 +1,8 @@
+flask
+crewai
+PyPDF2
+requests
+beautifulsoup4
+flask-jwt-extended
+google-api-python-client
+mailjet_rest
